@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mountain Pvt. Ltd</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <style>
+          .carousel-item img{
+            height: 600px;
+            }
+            .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background-color: #000000;
+      }
+      </style>
+  </head>
+  <body>
+{% load static %}
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+       <img src="{% static 'logo.png' %}" class="d-block mx-lg-auto img-fluid" alt="Porfile Photo"
+                 width="70"
+                 height="70"
+                 loading="lazy">
+
+        <span class="fs-4">Mountain Pvt. Ltd</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="mountainservices" class="text-dark nav-link">Services</a></li>
+<!--        <li class="nav-item"><a href="mountainblogs" class="text-dark nav-link">Blog</a></li>-->
+
+
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ContactUs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+
+              <li><a class="dropdown-item" href="/mountainconstruction">Construction</a></li>
+
+              <li><a class="dropdown-item" href="/mountainevents">Events</a></li>
+
+          </ul>
+        </li>
+<!--        <li class="nav-item"><a href="/mountainaboutus" class="text-dark nav-link">AboutUs</a></li>-->
+      </ul>
+    </header>
+  </div>
+
+
+  {% block content %}
+    {% endblock %}
+
+
+  <hr>
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+            <small class="d-block mb-3 text-muted">© 2022-2023</small>
+            </div>
+            <div class="col-6 col-md">
+                <a href="mountainservices" style="text-decoration:none;" class="text-dark">
+            <h5>Services</h5>
+                </a>
+            </div>
+<!--            <div class="col-6 col-md">-->
+<!--                <a href="mountainblogs" style="text-decoration:none;" class="text-dark">-->
+<!--            <h5>Blog</h5>-->
+<!--                </a>-->
+<!--            </div>-->
+            <div class="col-6 col-md">
+                <a href="mountainconstruction" style="text-decoration:none;" class="text-dark">
+            <h5>Constructions</h5>
+                </a>
+            </div>
+            <div class="col-6 col-md">
+                <a href="mountainevents" style="text-decoration:none;" class="text-dark">
+            <h5>Events</h5>
+                </a>
+            </div>
+<!--            <div class="col-6 col-md">-->
+<!--                <a href="mountainaboutus" style="text-decoration:none;" class="text-dark">-->
+<!--            <h5>AboutUs</h5>-->
+<!--                    </a>-->
+<!--            </div>-->
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+  </body>
+</html>
